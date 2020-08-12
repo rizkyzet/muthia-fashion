@@ -118,7 +118,7 @@ $(document).on('change', '#warna', function () {
 
 
     $.ajax({
-        url: 'http://localhost/mutia2/produk/ajax_produk_warna',
+        url: 'http://localhost/muthia-fashion/produk/ajax_produk_warna',
         data: {
             warna: warna,
             kd_brg: kd_brg
@@ -144,7 +144,7 @@ $(document).ready(function () {
         let ukuran = $('#ukuran').val();
 
         $.ajax({
-            url: 'http://localhost/mutia2/produk/ajax_produk_ukuran',
+            url: 'http://localhost/muthia-fashion/produk/ajax_produk_ukuran',
             data: {
                 warna: warna,
                 kd_brg: kd_brg,
@@ -171,7 +171,7 @@ $(document).ready(function () {
         console.log(rowid);
 
         $.ajax({
-            url: 'http://localhost/mutia2/cart/ajax_cart_jumlah',
+            url: 'http://localhost/muthia-fashion/cart/ajax_cart_jumlah',
             data: {
                 rowid: rowid,
                 jumlah: jumlah,
@@ -180,7 +180,7 @@ $(document).ready(function () {
             method: 'post',
 
             success: function (data) {
-                document.location.href = 'http://localhost/mutia2/cart/';
+                document.location.href = 'http://localhost/muthia-fashion/cart/';
 
             }
         })
@@ -195,7 +195,7 @@ $(document).ready(function () {
         console.log(rowid);
 
         $.ajax({
-            url: 'http://localhost/mutia2/cart/ajax_cart_hapus',
+            url: 'http://localhost/muthia-fashion/cart/ajax_cart_hapus',
             data: {
                 rowid: rowid,
 
@@ -204,7 +204,7 @@ $(document).ready(function () {
             method: 'post',
 
             success: function (data) {
-                document.location.href = 'http://localhost/mutia2/cart/';
+                document.location.href = 'http://localhost/muthia-fashion/cart/';
 
             }
         })
@@ -223,7 +223,7 @@ $(document).ready(function () {
         console.log(id_kota);
         console.log(id_provinsi);
         $.ajax({
-            url: 'http://localhost/mutia2/cart/ajax_provinsi/',
+            url: 'http://localhost/muthia-fashion/cart/ajax_provinsi/',
             data: {
                 id_provinsi: id_provinsi,
                 id_kota: id_kota
@@ -247,7 +247,7 @@ $(document).on('change', '#checkout_kota', function () {
     let asal = $('#asal').val();
 
     $.ajax({
-        url: 'http://localhost/mutia2/cart/ajax_kota/',
+        url: 'http://localhost/muthia-fashion/cart/ajax_kota/',
         data: {
             id_provinsi: id_provinsi,
             id_kota: id_kota,
@@ -279,7 +279,7 @@ $(document).ready(function () {
         let id_provinsi = $(this).val();
 
         $.ajax({
-            url: 'http://localhost/mutia2/admin/akun/ajax_provinsi',
+            url: 'http://localhost/muthia-fashion/admin/akun/ajax_provinsi',
             data: {
                 id_provinsi: id_provinsi,
 
@@ -301,7 +301,7 @@ $(document).ready(function () {
         let id_provinsi = $(this).val();
 
         $.ajax({
-            url: 'http://localhost/mutia2/auth/ajax_provinsi',
+            url: 'http://localhost/muthia-fashion/auth/ajax_provinsi',
             data: {
                 id_provinsi: id_provinsi,
 
@@ -349,7 +349,7 @@ $('#pay-button').click(function (event) {
         let total_item = parseInt($('#total_item').val());
         let layanan = $('#layanan').val();
         $.ajax({
-            url: 'http://localhost/mutia2/cart/token',
+            url: 'http://localhost/muthia-fashion/cart/token',
             data: { total_bayar: total_bayar, ongkir: ongkir, total_item: total_item, layanan: layanan, shipping_kota: shipping_kota, shipping_alamat: shipping_alamat, shipping_no_tlp: shipping_no_tlp, shipping_nama: shipping_nama, shipping_kode_pos: shipping_kode_pos },
             method: 'POST',
             cache: false,
@@ -411,7 +411,7 @@ $(document).ready(function () {
             var kd_brg = $(this).data('kd_brg');
 
             $.ajax({
-                url: 'http://localhost/mutia2/admin/detail_barang/ajax_detail_stok',
+                url: 'http://localhost/muthia-fashion/admin/detail_barang/ajax_detail_stok',
                 data: {
                     stok: stok,
                     id: id,
@@ -421,7 +421,7 @@ $(document).ready(function () {
                 method: 'post',
 
                 success: function () {
-                    document.location.href = 'http://localhost/mutia2/admin/detail_barang/tampil/' + kd_brg + '';
+                    document.location.href = 'http://localhost/muthia-fashion/admin/detail_barang/tampil/' + kd_brg + '';
 
                 }
             })
@@ -439,7 +439,7 @@ $(document).ready(function () {
 
 
         $.ajax({
-            url: 'http://localhost/mutia2/pemilik/laporan/ajax_laporan_penjualan/',
+            url: 'http://localhost/muthia-fashion/pemilik/laporan/ajax_laporan_penjualan/',
             data: {
                 tanggal_awal: tanggal_awal,
                 tanggal_akhir: tanggal_akhir
@@ -464,7 +464,7 @@ $(document).ready(function () {
 
 
         $.ajax({
-            url: 'http://localhost/mutia2/pemilik/laporan/ajax_laporan_penjualan/',
+            url: 'http://localhost/muthia-fashion/pemilik/laporan/ajax_laporan_penjualan/',
             data: {
                 tanggal_awal: tanggal_awal,
                 tanggal_akhir: tanggal_akhir
@@ -480,7 +480,33 @@ $(document).ready(function () {
     })
 })
 
+$(document).ready(function () {
+    $('#barang_laporan').on('change', function () {
 
+
+        let kd_brg = $(this).val();
+        console.log(kd_brg);
+
+        $.ajax({
+            url: 'http://localhost/muthia-fashion/pemilik/laporan/ajax_laporan_stok/',
+            data: {
+                kd_brg: kd_brg
+            },
+            method: 'post',
+
+            success: function (data) {
+                $('.laporan_stok').html(data);
+                $('.laporan_stok').DataTable({
+                    "destroy": true, //use for reinitialize datatable
+                });
+
+            }
+        })
+    })
+
+
+
+})
 
     (function ($) {
         var element = $('#ringkasan'),

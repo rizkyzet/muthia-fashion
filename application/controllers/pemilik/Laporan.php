@@ -135,21 +135,58 @@ class Laporan extends CI_Controller
         $this->db->join('detail_barang', 'barang.kd_brg=detail_barang.kd_brg');
         $data['stok'] = $this->db->get()->result_array();
 
+        $data['barang'] = $this->db->get_where('barang')->result_array();
+
         $this->load->view("tamplate_dashboard/header", $data);
         $this->load->view("tamplate_dashboard/sidebar_pemilik");
         $this->load->view("tamplate_dashboard/topbar");
         $this->load->view("pemilik/laporan/form_stok");
         $this->load->view("tamplate_dashboard/footer");
     }
+
+    public function ajax_laporan_stok()
+    {
+        $kd_brg = $this->input->post('kd_brg');
+
+        if ($kd_brg == 'semua') {
+
+            $this->db->select('barang.*,detail_barang.*');
+            $this->db->from('barang');
+            $this->db->join('detail_barang', 'barang.kd_brg=detail_barang.kd_brg');
+            $data['stok'] = $this->db->get()->result_array();
+
+            $this->load->view('pemilik/laporan/ajax_laporan_stok', $data);
+        } else {
+            $this->db->select('barang.*,detail_barang.*');
+            $this->db->from('barang');
+            $this->db->join('detail_barang', 'barang.kd_brg=detail_barang.kd_brg');
+            $this->db->where('barang.kd_brg', $kd_brg);
+            $data['stok'] = $this->db->get()->result_array();
+            $this->load->view('pemilik/laporan/ajax_laporan_stok', $data);
+        }
+    }
+
     public function cetak_stok()
     {
         $mpdf = new \Mpdf\Mpdf();
-        $this->db->select('barang.*,detail_barang.*');
-        $this->db->from('barang');
-        $this->db->join('detail_barang', 'barang.kd_brg=detail_barang.kd_brg');
-        $data['stok'] = $this->db->get()->result_array();
+        $kd_brg = $this->input->post('kd_brg');
+        if ($kd_brg == 'semua') {
 
-        $html = $this->load->view('pemilik/laporan/form_cetak_stok', $data, true);
+
+            $this->db->select('barang.*,detail_barang.*');
+            $this->db->from('barang');
+            $this->db->join('detail_barang', 'barang.kd_brg=detail_barang.kd_brg');
+            $data['stok'] = $this->db->get()->result_array();
+
+            $html = $this->load->view('pemilik/laporan/form_cetak_stok', $data, true);
+        } else {
+            $this->db->select('barang.*,detail_barang.*');
+            $this->db->from('barang');
+            $this->db->join('detail_barang', 'barang.kd_brg=detail_barang.kd_brg');
+            $this->db->where('barang.kd_brg', $kd_brg);
+            $data['stok'] = $this->db->get()->result_array();
+            $html = $this->load->view('pemilik/laporan/form_cetak_stok', $data, true);
+        }
 
         $mpdf->AddPage(
             'L' // L - landscape, P - portrait
