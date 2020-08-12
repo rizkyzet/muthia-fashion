@@ -1,0 +1,109 @@
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
+
+    /* 
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover,
+    .nav-item .active {
+        color: #20c997 !important;
+    } */
+    .dropdown-toggle {
+        color: rgba(0, 0, 0, .5) !important;
+    }
+
+    .navbar-nav>.active>a {
+        color: #20c997 !important;
+
+    }
+
+    .nav-item>a:hover {
+        color: #20c997 !important;
+
+    }
+
+    .dropdown-item:hover {
+        background-color: #20c997;
+        color: white;
+    }
+
+
+}
+.nav-link{
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color:#20c997 ;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+}
+
+.nav-item>.active {
+    color: #20c997 !important;
+    background-color:white !important ;
+}
+.nav-link.active:hover{
+    color: rgba(0, 0, 0, .5) !important;
+};
+
+.nav-item>.nav-link{
+    font-weight: 900 !important;
+}
+
+.card-header {
+    background-color:#20c997 ;
+}
+/* .nav-item {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px !important;
+} */
+.form-control{
+    color:#303131;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+
+}
+
+.stop{
+
+        position: fixed;
+        top: 100;
+        right: 0;
+  
+}
