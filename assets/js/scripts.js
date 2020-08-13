@@ -294,6 +294,7 @@ $(document).ready(function () {
 
     })
 })
+
 $(document).ready(function () {
     $('#provinsi_auth').on('change', function () {
         console.log('ok');

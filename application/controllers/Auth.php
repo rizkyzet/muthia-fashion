@@ -159,8 +159,8 @@ class Auth extends CI_Controller
             if ($this->email->send()) {
                 $this->db->insert('user', $data);
                 $this->db->insert('user_token', $data_token);
-                $this->session->set_flashdata("pesan", '<div class="alert alert-danger" role="alert">
-                Selamat Akun Anda Berhasil Login!! Silahkan Cek Email Untuk Aktivasi
+                $this->session->set_flashdata("pesan", '<div class="alert alert-success" role="alert">
+                Registrasi berhasil!! Silahkan Cek Email Untuk Aktivasi
               </div>');
                 redirect("auth");
             } else {

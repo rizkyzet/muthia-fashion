@@ -12,7 +12,7 @@
                 <div class="col-lg">
                     <div class="p-5">
                         <div class="text-center">
-                            <h1 class="h4 text-gray-900 mb-4">Daftar Diri</h1>
+                            <h1 class="h4 text-gray-900 mb-4">Daftar Akun</h1>
                         </div>
                         <?= $this->session->flashdata("pesan"); ?>
                         <form class="user" action="<?= base_url("auth/register") ?>" method="post">
@@ -48,10 +48,10 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <select name="kota" id="kota_auth" class="form-control">
-                                        <option value="" selected>Pilih Kota</option>
-                                        <?php foreach ($kota as $kota) : ?>
+                                        <option value="" selected>Pilih Kota/Kabupaten</option>
+                                        <!-- <?php foreach ($kota as $kota) : ?>
                                             <option value="<?= $kota["id_kota"] ?>"><?= $kota["kota"] ?></option>
-                                        <?php endforeach; ?>
+                                        <?php endforeach; ?> -->
 
                                     </select>
                                     <?= form_error("kota", "<div class='text-danger text-small'>", "</div>"); ?>
@@ -67,7 +67,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-success btn-user btn-block">
-                                Masuk
+                                Daftar
                             </button>
 
 
