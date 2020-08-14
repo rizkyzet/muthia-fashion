@@ -79,7 +79,7 @@
                                 <div class="text-right d-flex flex-row align-items-start justify-content-start">
 
                                     <div class="product_button product_cart text-center d-flex flex-fill align-items-center justify-content-center">
-                                        <button style="background-color: #20c997;" class="btn  btn-block text-white" type="submit" <?= $this->session->userdata('role_id') == 1 ? 'disabled' : ($this->session->userdata('role_id') == 2 ? 'disabled' : '') ?>><i class="fas fa-shopping-cart"></i> Tambah ke keranjang</button>
+                                        <button style="background-color: #20c997;" class="btn  btn-block text-white" type="submit" <?= $this->session->userdata('role_id') == 1 ? 'disabled' : ($this->session->userdata('role_id') == 2 ? 'disabled' : '') ?>> Tambah ke keranjang</button>
                                     </div>
                                 </div>
                             </div>

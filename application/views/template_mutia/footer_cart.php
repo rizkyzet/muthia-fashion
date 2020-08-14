@@ -12,18 +12,18 @@
                             Copyright &copy;
                             <?= date('Y') ?>
                             All rights reserved |
-                            This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                            This template is made with <i class="fas fa-heart" aria-hidden="true"></i> by
                             <a href="https://colorlib.com" target="_blank">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <nav class="footer_nav ml-md-auto order-md-2 order-1">
                             <ul style="margin-bottom: 30px;" class="footer_social_list d-flex flex-row align-items-start justify-content-start">
-                                <li style="width: 40px; height:43px"><a href="#"><i style="line-height:40px;" class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li style="width: 40px; height:43px;"><a href="#"><i style="line-height:40px;" class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                <li style="width: 40px; height:43px"><a href="#"><i style="line-height:40px;" class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li style="width: 40px; height:43px;"><a href="#"><i style="line-height:40px;" class="fab fa-youtube" aria-hidden="true"></i></a>
                                 </li>
-                                <li style="width: 40px; height:43px"><a href="#"><i style="line-height:40px;" class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <li style="width: 40px; height:43px"><a href="#"><i style="line-height:40px;" class="fab fa-google-plus-g" aria-hidden="true"></i></a>
                                 </li>
-                                <li style="width: 40px; height:43px"><a href="#"><i style="line-height:40px;" class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li style="width: 40px; height:43px"><a href="#"><i style="line-height:40px;" class="fab fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
                         </nav>
                     </div>
