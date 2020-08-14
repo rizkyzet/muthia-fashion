@@ -17,23 +17,30 @@ class Produk extends CI_Controller
         $data['detail'] = $this->db->get_where('detail_barang', ['kd_brg' => $kd_brg])->result_array();
 
         // ambil warna
-        foreach ($data['detail'] as $detail) {
-            $tampung_warna[] =  $detail['warna'];
-        }
-        $tampung_warna = array_unique($tampung_warna);
-        $data['warna'] = array_values($tampung_warna);
+        if ($data['detail']) {
 
-        //ukuran
-        $ukuran = $this->db->get_where('detail_barang', ['warna' => $data['detail'][0]['warna'], 'kd_brg' => $kd_brg])->result_array();
-        foreach ($ukuran as $uk) {
-            $tampung_ukuran[] =  $uk['ukuran'];
-        }
+            foreach ($data['detail'] as $detail) {
+                $tampung_warna[] =  $detail['warna'];
+            }
+            $tampung_warna = array_unique($tampung_warna);
+            $data['warna'] = array_values($tampung_warna);
 
-        $data['ukuran'] = $tampung_ukuran;
-        $this->load->view('template_mutia/header_produk', $data);
-        $this->load->view('template_mutia/navbar_new');
-        $this->load->view('mutia_fashion/produk/form_produk');
-        $this->load->view('template_mutia/footer_produk');
+            //ukuran
+            $ukuran = $this->db->get_where('detail_barang', ['warna' => $data['detail'][0]['warna'], 'kd_brg' => $kd_brg])->result_array();
+            foreach ($ukuran as $uk) {
+                $tampung_ukuran[] =  $uk['ukuran'];
+            }
+            $data['ukuran'] = $tampung_ukuran;
+            $this->load->view('template_mutia/header_produk', $data);
+            $this->load->view('template_mutia/navbar_new');
+            $this->load->view('mutia_fashion/produk/form_produk');
+            $this->load->view('template_mutia/footer_produk');
+        } else {
+            $this->load->view('template_mutia/header_produk', $data);
+            $this->load->view('template_mutia/navbar_new');
+            $this->load->view('mutia_fashion/produk/form_kosong');
+            $this->load->view('template_mutia/footer_produk');
+        }
     }
 
 

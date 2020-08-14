@@ -8,7 +8,7 @@
     <meta name="description" content="Little Closet template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="<?= base_url('vendor/littlecloset/') ?>styles/bootstrap-4.1.2/bootstrap.min.css">
-    <link href="<?= base_url("vendor/sbadmin/") ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url('vendor/littlecloset/') ?>plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('vendor/littlecloset/') ?>plugins/flexslider/flexslider.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('vendor/littlecloset/') ?>styles/product.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('vendor/littlecloset/') ?>styles/product_responsive.css">
@@ -30,6 +30,10 @@
         color: #FFFFFF;
         font-size: 14px;
         font-weight: 700;
+    }
+
+    footer .footer_bar .container {
+        height: 50px;
     }
 </style>
 
