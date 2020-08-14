@@ -122,50 +122,6 @@
                     </div>
                 </div>
 
-                <!-- Slide -->
-                <div class="owl-item">
-                    <div class="background_image" style="background-color: #2fce98;"></div>
-                    <div class="container fill_height">
-                        <div class="row fill_height">
-                            <div class="col fill_height">
-                                <div class="home_container d-flex flex-column align-items-center justify-content-start">
-                                    <div class="home_content">
-                                        <div class="home_title">Cuci Gudang</div>
-                                        <div class="home_subtitle">Tunik</div>
-                                        <div class="home_items">
-                                            <div class="row">
-                                                <div class="col-sm-3 offset-lg-1">
-                                                    <div class="home_item_side">
-                                                        <a href="product.html"><img src="<?= base_url('vendor/littlecloset/') ?>images/home_1.jpg" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
-                                                    <div class="product home_item_large">
-                                                        <div class="product_tag d-flex flex-column align-items-center justify-content-center">
-                                                            <div>
-                                                                <div>Mulai</div>
-                                                                <div>Rp.<span>250.000</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <a href="tes">
-                                                            <div class="product_image"><img src="<?= base_url('vendor/littlecloset/') ?>images/home_2.jpg" alt=""></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="home_item_side">
-                                                        <a href="product.html"><img src="<?= base_url('vendor/littlecloset/') ?>images/home_3.jpg" alt=""></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
 
 

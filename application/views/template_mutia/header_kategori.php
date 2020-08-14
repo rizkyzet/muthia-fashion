@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Category</title>
+    <title>Muthia Fasion | <?= get_title_store() ?></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Little Closet template">

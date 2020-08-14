@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <title>Cart</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Little Closet template">
@@ -14,6 +13,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/') ?>style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <title>Muthia Fasion | <?= get_title_store(); ?></title>
 </head>
 
 <body>

@@ -50,6 +50,40 @@ $('.image').on('change', function () {
 
 
 $(document).ready(function () {
+    (function ($) {
+        var element = $('#ringkasan'),
+            originalY = element.offset().top;
+
+        // Space between element and top of screen (when scrolling)
+        var topMargin = 80;
+
+        // Should probably be set in CSS; but here just for emphasis
+        element.css('position', 'relative');
+
+        $(window).on('scroll', function (event) {
+            var scrollTop = $(window).scrollTop();
+
+
+
+            if ($(window).scrollTop() > 1000) {
+                element.stop();
+
+            } else {
+
+                element.stop(false, false).animate({
+
+                    top: scrollTop < originalY
+                        ? 0
+                        : scrollTop - originalY + topMargin
+                }, 500);
+            }
+        });
+    })(jQuery);
+})
+
+
+
+$(document).ready(function () {
     $('#checkout_form').validate({
         rules: {
             email: { required: true },
@@ -509,35 +543,6 @@ $(document).ready(function () {
 
 })
 
-    (function ($) {
-        var element = $('#ringkasan'),
-            originalY = element.offset().top;
-
-        // Space between element and top of screen (when scrolling)
-        var topMargin = 80;
-
-        // Should probably be set in CSS; but here just for emphasis
-        element.css('position', 'relative');
-
-        $(window).on('scroll', function (event) {
-            var scrollTop = $(window).scrollTop();
-
-
-
-            if ($(window).scrollTop() > 1000) {
-                element.stop();
-
-            } else {
-
-                element.stop(false, false).animate({
-
-                    top: scrollTop < originalY
-                        ? 0
-                        : scrollTop - originalY + topMargin
-                }, 500);
-            }
-        });
-    })(jQuery);
 
 
 
