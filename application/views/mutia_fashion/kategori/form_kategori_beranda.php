@@ -3,7 +3,7 @@
 <div class="home">
     <div class="home_container d-flex flex-column align-items-center justify-content-end">
         <div class="home_content text-center">
-            <div class="home_title mb-4">Halaman Kategori</div>
+            <div class="home_title mb-4">Kategori <?= $kategori['nama_kategori'] ?></div>
 
         </div>
     </div>

@@ -60,11 +60,6 @@
         </div>
 
 
-        <div class="row page_nav_row">
-            <div class="col">
 
-
-            </div>
-        </div>
     </div>
 </div>
