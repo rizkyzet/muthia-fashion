@@ -2,11 +2,11 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-3 text-gray-800">LAPORAN PENJUALAN</h1>
+    <h1 class="h3 mb-3 text-gray-800">LAPORAN STOK</h1>
     <?= $this->session->flashdata('pesan') ?>
 
 
-    <form class="form-inline mb-3" method="POST" action="<?= base_url('pemilik/laporan/cetak_stok') ?>">
+    <form target="__blank" class="form-inline mb-3" method="POST" action="<?= base_url('pemilik/laporan/cetak_stok') ?>">
         <div class="input-group mb-2 mr-2">
             <div class="input-group-prepend">
                 <div class="input-group-text">Barang</div>

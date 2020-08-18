@@ -4,7 +4,7 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800">LAPORAN PENJUALAN</h1>
     <?= $this->session->flashdata('pesan') ?>
-    <form class="form-inline" method="POST" action="<?= base_url('pemilik/laporan/cetak_laporan_penjualan') ?>">
+    <form target="__blank" class="form-inline" method="POST" action="<?= base_url('pemilik/laporan/cetak_laporan_penjualan') ?>">
 
         <div class="input-group mb-2 mr-sm-2">
             <div class="input-group-prepend">

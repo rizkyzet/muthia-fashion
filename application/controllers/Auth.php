@@ -34,7 +34,7 @@ class Auth extends CI_Controller
                                 'role_id' => $dbuser['role_id']
                             ];
                             $this->session->set_userdata($data_session);
-                            redirect('Beranda');
+                            redirect('pemilik');
                         } elseif ($dbuser['role_id'] == 2) {
                             $data_session = [
                                 'email' => $dbuser['email'],
