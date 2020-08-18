@@ -74,7 +74,7 @@
     <div class="container">
 
         <div class="pelanggan">
-            <table class="table_1" cellspacing=0 cellpadding=10>
+            <table class="table_1" cellspacing=0 cellpadding=5>
                 <tr>
                     <th colspan="2" style="border-bottom:1px solid black;"> Detail Pelanggan</th>
                 </tr>
@@ -94,7 +94,7 @@
         </div>
 
         <div class="pembayaran">
-            <table cellspacing=0 cellpadding=10>
+            <table cellspacing=0 cellpadding=5>
                 <tr>
                     <th colspan="2" style="border-bottom:1px solid black;"> Detail Pembayaran</th>
                 </tr>
@@ -120,7 +120,7 @@
 
 
         <div class="pengiriman">
-            <table cellspacing=0 cellpadding=10>
+            <table cellspacing=0 cellpadding=5>
                 <tr>
                     <th colspan="2" style="border-bottom:1px solid black;"> Detail Pengiriman</th>
                 </tr>
@@ -147,7 +147,7 @@
 
 
         <div class="tagihan">
-            <table cellspacing=0 cellpadding=10 border=1>
+            <table cellspacing=0 cellpadding=5 border=1>
                 <tr>
                     <th>Alamat Tagihan</th>
                     <th>Alamat Pengiriman</th>
