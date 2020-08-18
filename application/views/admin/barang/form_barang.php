@@ -29,7 +29,7 @@
                     <td> <?= $brg['nama_brg'] ?></td>
                     <td> <?= ambil_nama_kategori($brg['kd_kategori']) ?></td>
                     <td> <?= $brg['deskripsi'] ?></td>
-                    <td> <?= $brg['harga'] ?></td>
+                    <td> <?= formatHarga($brg['harga']) ?></td>
                     <td> <?= $brg['berat'] ?></td>
                     <td>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">

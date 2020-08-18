@@ -116,7 +116,7 @@ class Pesanan extends CI_Controller
 
         ); // margin footer
         $mpdf->WriteHTML($html);
-        $mpdf->Output();
+        $mpdf->Output('pesanan ' . $id . '.pdf', 'I');
     }
 
     public function update_midtrans()

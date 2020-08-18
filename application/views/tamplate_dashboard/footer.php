@@ -65,10 +65,12 @@
 <!-- Page level custom scripts -->
 <!-- <script src="<?= base_url("vendor/sbadmin/") ?>js/demo/chart-area-demo.js"></script>
 <script src="<?= base_url("vendor/sbadmin/") ?>js/demo/chart-pie-demo.js"></script> -->
-
+<script src="//cdn.ckeditor.com/4.14.1/basic/ckeditor.js"></script>
 
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url("assets/js/") ?>scripts.js"></script>
+
+
 
 </body>
 

@@ -25,7 +25,7 @@
                                                         <div class="product_tag d-flex flex-column align-items-center justify-content-center">
                                                             <div>
                                                                 <div>Mulai</div>
-                                                                <div>Rp.<span><?= $terbaru[1]['harga'] ?></span></div>
+                                                                <div>Rp.<span><?= formatHarga($terbaru[1]['harga']) ?></span></div>
                                                             </div>
                                                         </div>
                                                         <a href="<?= base_url('produk/detail/' . $terbaru[1]['kd_brg']) ?>"><img style="height: 300px;" src="<?= base_url('assets/upload/barang/' . $terbaru[1]['gambar']) ?>" alt="">
@@ -37,7 +37,7 @@
                                                         <div class="product_tag d-flex flex-column align-items-center justify-content-center">
                                                             <div>
                                                                 <div>Mulai</div>
-                                                                <div>Rp.<span><?= $terbaru[0]['harga'] ?></span></div>
+                                                                <div>Rp.<span><?= formatHarga($terbaru[0]['harga']) ?></span></div>
                                                             </div>
                                                         </div>
                                                         <a href="<?= base_url('produk/detail/' . $terbaru[0]['kd_brg']) ?>">
@@ -50,7 +50,7 @@
                                                         <div class="product_tag d-flex flex-column align-items-center justify-content-center">
                                                             <div>
                                                                 <div>Mulai</div>
-                                                                <div>Rp.<span><?= $terbaru[2]['harga'] ?></span></div>
+                                                                <div>Rp.<span><?= formatHarga($terbaru[2]['harga']) ?></span></div>
                                                             </div>
                                                         </div>
                                                         <a href="<?= base_url('produk/detail/' . $terbaru[2]['kd_brg']) ?>"><img style="height: 300px;" src="<?= base_url('assets/upload/barang/' . $terbaru[2]['gambar']) ?>" alt=""></a>
@@ -82,7 +82,7 @@
                                                         <div class="product_tag d-flex flex-column align-items-center justify-content-center">
                                                             <div>
                                                                 <div>Mulai</div>
-                                                                <div>Rp.<span><?= $terlaris[1]['harga'] ?></span></div>
+                                                                <div>Rp.<span><?= formatHarga($terlaris[1]['harga']) ?></span></div>
                                                             </div>
                                                         </div>
                                                         <a href="<?= base_url('produk/detail/' . $terlaris[1]['kd_brg']) ?>"><img style="height: 300px;" src="<?= base_url('assets/upload/barang/' . $terlaris[1]['gambar']) ?>" alt="">
@@ -94,7 +94,7 @@
                                                         <div class="product_tag d-flex flex-column align-items-center justify-content-center">
                                                             <div>
                                                                 <div>Mulai</div>
-                                                                <div>Rp.<span><?= $terlaris[0]['harga'] ?></span></div>
+                                                                <div>Rp.<span><?= formatHarga($terlaris[0]['harga']) ?></span></div>
                                                             </div>
                                                         </div>
                                                         <a href="<?= base_url('produk/detail/' . $terlaris[0]['kd_brg']) ?>">
@@ -107,7 +107,7 @@
                                                         <div class="product_tag d-flex flex-column align-items-center justify-content-center">
                                                             <div>
                                                                 <div>Mulai</div>
-                                                                <div>Rp.<span><?= $terlaris[2]['harga'] ?></span></div>
+                                                                <div>Rp.<span><?= formatHarga($terlaris[2]['harga']) ?></span></div>
                                                             </div>
                                                         </div>
                                                         <a href="<?= base_url('produk/detail/' . $terlaris[2]['kd_brg']) ?>"><img style="height: 300px;" src="<?= base_url('assets/upload/barang/' . $terlaris[2]['gambar']) ?>" alt=""></a>
@@ -195,7 +195,7 @@
                                 </div>
                                 <!-- harga produk -->
                                 <div class="ml-auto text-right">
-                                    <div class="product_price text-right">Rp.<span><?= $brg['harga'] ?></span></div>
+                                    <div class="product_price text-right">Rp.<span><?= formatHarga($brg['harga']) ?></span></div>
                                 </div>
                                 <!-- harga produk -->
                             </div>

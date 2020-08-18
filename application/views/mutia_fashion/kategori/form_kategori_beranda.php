@@ -31,7 +31,7 @@
                                     </div>
                                 </div>
                                 <div class="ml-auto text-right">
-                                    <div class="product_price text-right">Rp.<span><?= $brg['harga'] ?></span></div>
+                                    <div class="product_price text-right">Rp.<span><?= formatHarga($brg['harga']) ?></span></div>
                                 </div>
                             </div>
                             <a href="<?= base_url('produk/detail/' . $brg['kd_brg']) ?>">

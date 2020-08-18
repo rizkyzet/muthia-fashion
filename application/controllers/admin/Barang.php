@@ -38,6 +38,7 @@ class Barang extends CI_Controller
             $this->load->view("admin/barang/form_tambahbrg");
             $this->load->view("tamplate_dashboard/footer");
         } else {
+
             $set = [
                 "kd_brg" => $this->input->post("kd_brg"),
                 "nama_brg" => $this->input->post("nama_brg"),

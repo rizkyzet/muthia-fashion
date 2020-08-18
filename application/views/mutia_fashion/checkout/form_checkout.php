@@ -135,7 +135,7 @@
                                 </li>
                                 <li class="d-flex flex-row align-items-center justify-content-start">
                                     <div class="cart_extra_total_title">Total Item</div>
-                                    <div class="cart_extra_total_value ml-auto">Rp. <?= $this->cart->total(); ?></div>
+                                    <div class="cart_extra_total_value ml-auto">Rp. <?= formatHarga($this->cart->total()); ?></div>
                                 </li>
 
                                 <li class="d-flex flex-row align-items-center justify-content-start">

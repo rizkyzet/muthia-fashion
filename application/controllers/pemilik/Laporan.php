@@ -124,7 +124,7 @@ class Laporan extends CI_Controller
 
         ); // margin footer
         $mpdf->WriteHTML($html);
-        $mpdf->Output();
+        $mpdf->Output('penjualan ' . $data['tanggal_awal'] . '-' . $data['tanggal_akhir'] . '.pdf', 'I');
     }
 
 
@@ -193,6 +193,6 @@ class Laporan extends CI_Controller
 
         ); // margin footer
         $mpdf->WriteHTML($html);
-        $mpdf->Output();
+        $mpdf->Output('stok.pdf', 'I');
     }
 }

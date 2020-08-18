@@ -34,8 +34,13 @@
                 </div>
                 <div class="form-group">
                     <label for="deskripsi">Deskripsi</label>
-                    <textarea name="deskripsi" id="deskripsi" class="form-control"></textarea>
+
+
+                    <textarea name="deskripsi" id="deskripsi" rows="10" cols="80">
+
+                    </textarea>
                     <?= form_error("deskripsi", "<div class='text-danger text-small'>", "</div>") ?>
+
                 </div>
                 <div class="form-group">
                     <label for="">Harga</label>

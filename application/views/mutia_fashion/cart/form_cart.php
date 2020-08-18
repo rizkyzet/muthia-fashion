@@ -59,7 +59,7 @@
                                         </div>
                                         <div class="product_color product_text"><span>Warna: </span><?= $keranjang['options']['Color'] ?></div>
                                         <div class="product_size product_text"><span>Ukuran: </span><?= $keranjang['options']['Size'] ?></div>
-                                        <div class="product_price product_text"><span>Harga: </span><?= $keranjang['price'] ?></div>
+                                        <div class="product_price product_text"><span>Harga: </span><?= formatHarga($keranjang['price']) ?></div>
                                         <div class="product_weight product_text"><span>Berat: </span><?= $keranjang['qty'] * $keranjang['options']['Weight'] ?></div>
                                         <div class="product_quantity_container">
 

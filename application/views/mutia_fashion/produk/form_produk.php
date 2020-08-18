@@ -70,7 +70,7 @@
                                 </div>
                             </div>
 
-                            <div class="product_price">Rp.<span><?= $barang['harga'] ?></span></div>
+                            <div class="product_price">Rp.<span><?= formatHarga($barang['harga']) ?></span></div>
 
                             <div class="product_text">
                                 <p><?= $barang['deskripsi'] ?></p>

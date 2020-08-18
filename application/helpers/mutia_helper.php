@@ -408,3 +408,8 @@ function getStatusPesanan($status)
         return 'dibayar';
     };
 }
+
+function formatHarga($harga)
+{
+    return number_format($harga, 0, ',', '.');
+}
