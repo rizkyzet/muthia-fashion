@@ -33,8 +33,8 @@
                     <td><?= $pesanan['va_number'] ?></td>
                 </tr>
                 <tr>
-                    <th>Instruksi :</th>
-                    <td><a target="_blank" href="<?= $pesanan['instruksi'] ?>" class="btn btn-success btn-sm"><i class="fas fa-download"></i></a></td>
+                    <th>Cetak Pesanan :</th>
+                    <td><a target="_blank" href="<?= base_url('admin/pesanan/cetak_pesanan/' . $pesanan['id_pesanan']) ?>" class="btn btn-success btn-sm"><i class="fas fa-download"></i></a></td>
                 </tr>
                 <tr>
                     <th>Tanggal Dibayar :</th>
