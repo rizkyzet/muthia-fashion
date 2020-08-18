@@ -21,12 +21,17 @@
             <?php foreach ($barang as $brg) : ?>
                 <div class="col-xl-4 col-md-6 grid-item new">
                     <div class="product">
-                        <div class="product_image"><img style="width:350px; height:390px;" src="<?= base_url('assets/upload/barang/' . $brg['gambar']) ?>" alt=""></div>
+                        <a href="<?= base_url('produk/detail/' . $brg['kd_brg']) ?>">
+                            <div class="product_image"><img style=" height:390px;" src="<?= base_url('assets/upload/barang/' . $brg['gambar']) ?>" alt=""></div>
+                        </a>
                         <div class="product_content">
                             <div class="product_info d-flex flex-row align-items-start justify-content-start">
                                 <div>
                                     <div>
-                                        <div class="product_name"><a href=""><?= $brg['nama_brg'] ?></a></div>
+                                        <div class="product_name">
+                                            <a href="<?= base_url('produk/detail/' . $brg['kd_brg']) ?>"><?= $brg['nama_brg'] ?>
+                                            </a>
+                                        </div>
                                         <div class="product_category">Kategori <a href="category.html"><?= ambil_nama_kategori($brg['kd_kategori']) ?></a></div>
                                     </div>
                                 </div>
