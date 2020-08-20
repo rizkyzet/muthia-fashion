@@ -504,3 +504,24 @@ $(document).ready(function () {
 		});
 	});
 });
+$(document).ready(function () {
+	$("#barang_laporan_admin").on("change", function () {
+		let kd_brg = $(this).val();
+		console.log(kd_brg);
+
+		$.ajax({
+			url: "http://localhost/muthia-fashion/admin/laporan/ajax_laporan_stok/",
+			data: {
+				kd_brg: kd_brg,
+			},
+			method: "post",
+
+			success: function (data) {
+				$(".laporan_stok").html(data);
+				$(".laporan_stok").DataTable({
+					destroy: true, //use for reinitialize datatable
+				});
+			},
+		});
+	});
+});

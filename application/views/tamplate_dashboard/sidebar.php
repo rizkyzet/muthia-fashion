@@ -93,7 +93,20 @@
                 <span>Pesanan</span></a>
         </li>
 
-
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">
+            LAPORAN
+        </div>
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('admin/laporan/penjualan') ?>">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Laporan Penjualan</span></a>
+            <a class="nav-link" href="<?= base_url('admin/laporan/stok') ?>">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Laporan Stok</span></a>
+        </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">

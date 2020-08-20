@@ -299,13 +299,13 @@ function role_logged_in()
 function get_title()
 {
     $ci = get_instance();
-    $title1 = ucwords(str_replace("_", " ", $ci->uri->segment(2)));
+    $title1 = ucwords(str_replace("_", " ", $ci->uri->segment(1)));
 
-    $explode_title2 = explode('_', $ci->uri->segment(3));
+    $explode_title2 = explode('_', $ci->uri->segment(2));
     if ($explode_title2) {
         $title2 = ucwords(implode(' ', $explode_title2));
     } else {
-        $title2 = $ci->uri->segment(3);
+        $title2 = $ci->uri->segment(2);
     }
 
     if ($title2) {
