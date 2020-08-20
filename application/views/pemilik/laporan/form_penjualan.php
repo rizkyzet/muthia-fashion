@@ -57,12 +57,12 @@
                         </ul>
                     </td>
                     <td><?= ucwords(str_replace('_', ' ', $jual['jenis_pembayaran'])) ?></td>
-                    <td><?= $jual['total_bayar'] ?></td>
+                    <td><?= formatHarga($jual['total_bayar']) ?></td>
                 </tr>
             <?php endforeach; ?>
             <tr>
                 <td colspan="5" class="text-center font-weight-bold">Total</td>
-                <td><?= $total ?></td>
+                <td><?= formatHarga($total) ?></td>
             </tr>
         </tbody>
     </table>
